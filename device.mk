@@ -251,6 +251,13 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.enable-charging-led=0
 
+#Goo.im
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=zyr3x \
+    ro.goo.board=mako \
+    ro.goo.rom=AOKPZMako \
+    ro.goo.version=$(shell date +%Y%m%d)
+
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
 PRODUCT_COPY_FILES += \

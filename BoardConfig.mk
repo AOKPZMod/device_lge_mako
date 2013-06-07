@@ -39,7 +39,8 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 TARGET_KERNEL_SOURCE := kernel/lge/mako
-TARGET_KERNEL_CONFIG := mako_defconfig
+TARGET_KERNEL_CONFIG := franco_defconfig
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linaro-4.8/bin/arm-eabi-
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
